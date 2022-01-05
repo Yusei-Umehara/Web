@@ -1,0 +1,136 @@
+body
+{
+    background-color: black;
+    color: green;
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.home
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container
+{
+    width: auto;
+    height: auto;
+    padding: 0;
+    text-align: left;
+    border: 3px solid darkorchid;
+    margin: 0 auto;
+    min-width: 350px;
+    min-height: 600px;
+}
+
+#container h1   /* Titulo */
+{
+    font-size: 28px;
+    color: darkorchid;
+    text-align: center;
+
+}
+
+
+#cabecera
+{
+    background: green;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
+    color:darkgrey;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+    
+
+}
+
+/* H T C */
+#cabecera #tagline
+{
+    padding: 0 0 0 1em;
+    font-weight: normal;
+    font-size: 0.8em;
+    
+}
+
+
+
+#post
+{
+    background: black;
+    padding: 1em;
+    text-align: center;
+    font-size: large;
+
+
+    opacity: 0.90;
+    flex: 1;
+    height: 505px;
+    min-width: auto;
+
+}
+
+#post #logo
+{
+    width: 70px;
+    vertical-align: middle;
+}
+
+#post #links #logoPlatzi
+{
+    width: 42px;
+    vertical-align: middle;
+
+}
+
+#post #links #logoGit
+{
+    width: 40px;
+    vertical-align: middle;
+
+}
+
+#post #links #logoItch
+{
+    width: 40px;
+    vertical-align: middle;
+
+}
+
+#post #links #logoLetter
+{
+    width: 40px;
+    vertical-align: middle;
+
+}
+
+#post #links #correo
+{
+    width: 33px;
+    vertical-align: middle;
+    flex: 1;
+    
+
+}
+
+
+#pie
+{
+    background: green;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
+    color:darkgrey;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: sansserif;
+    margin: 0px;
+    padding: 0.7em;
+    text-align: center;
+
+}
+

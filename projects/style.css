@@ -1,0 +1,341 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+html{
+    font-size: 62.5%;
+    background-color: blueviolet;
+}
+header{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 6rem;
+    
+}
+.head-container{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.logo-container{
+    padding-right: 1rem;
+    width: auto;
+    height: auto;
+}
+.logo-neko{
+    width: 5rem;
+    height: 5rem;
+    padding-left: 1rem;
+    padding-top: 0.8rem;
+    position:relative;
+}
+.nav{
+    height: auto;
+    padding-top: 1rem;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+ul li{
+    list-style: none;
+    justify-content: space-between;
+    color: mediumpurple;
+    font-size: 1.6rem;
+    padding-bottom: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+
+}
+
+.nav-items{
+    color: mediumpurple;
+    text-decoration: none;
+}
+.nav-items:hover{
+    background-color: mediumpurple;
+    color: red;
+}
+/* #projects{
+    color: whitesmoke;
+} */
+
+body{
+    font-size: 1.6rem;
+}
+main{
+    background-color: #1a1a1a;
+    width: 100%;
+    height:100%;    
+}
+
+.main-top{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.main-top p{
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.title{
+    color:mediumpurple;
+    font-size: 4rem;
+    padding-top: 1rem;
+
+}
+button{
+    background-color: mediumpurple;
+    color: black;
+}
+button:hover{
+    background-color: mediumslateblue;
+    color: red;
+}
+/* MAIN */
+.main{
+    width: 100%;
+    height: auto;
+}
+
+footer{
+    background-color: black;
+    color: mediumpurple;
+    width: 100%;
+    height: auto;
+    /* margin: 0 auto; */
+}
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.batata-icon{
+    padding-right: 1rem;
+}
+
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    
+}
+
+/*GAMES -------------------------------------------------*/
+.games{
+    width: 100%;
+    color: whitesmoke;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    
+}
+
+
+
+.game1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    order: 1;
+    width: 48%;
+    height: 50%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: rgb(22, 21, 21);
+}
+.g1c {
+    padding-right: 1rem;
+}
+
+.game1 img{
+    width: 11rem;
+    height: 12rem;
+    align-self: center;
+}
+
+
+.game2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 2;
+    width: 50%;
+    height: 50%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: rgb(22, 21, 21);
+}
+.g2c {
+    flex-direction: column;
+    padding-right: 1rem;
+}
+.game2 img{
+    width: 22rem;
+    height: 15rem;
+    align-self: center;
+}
+
+.game3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 3;
+    width: 49%;
+    height: 50%;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    background-color: rgb(22, 21, 21);
+    /* margin-right: 0.4rem; */
+}
+.g3c {
+    flex-direction: column;
+    padding-right: 1rem;
+}
+.game3 img{
+    width: 21rem;
+    height: 16rem;
+    align-self: center;
+}
+
+.game4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 4;
+    width: 50%;
+    height: 50%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-color: rgb(22, 21, 21);
+}
+.g4c {
+    flex-direction: column;
+    padding-right: 1rem;
+}
+.game4 img{
+    width: 22rem;
+    height: 15rem;
+    align-self: center;
+}
+.pong-list li{  
+    font-size: 2.5rem;
+}
+
+/*OTHERS ---------------------------------------------*/
+.others{
+    width: 100%;
+    height: auto;
+    order: 5;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.link-tree{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 6;
+    width: 45%;
+    height: 50%;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    background-color: rgb(22, 21, 21);
+    /* margin-right: 0.3rem; */
+}
+.ltc {
+    flex-direction: column;
+    padding-right: 1rem;
+}
+.ltc a{
+    text-decoration: none;
+    color:greenyellow;
+}
+.link-tree img{
+    width: 17rem;
+    height: 16rem;
+    align-self: center;
+}
+.link-tree-list li{
+    font-size: 2.5rem;
+}
+
+.github{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 7;
+    width: 54%;
+    height: 50%;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    background-color: rgb(22, 21, 21);
+}
+.gitc {
+    flex-direction: column;
+    padding-right: 1rem;
+}
+.gitc a{
+    text-decoration: none;
+    color: mediumpurple;
+}
+.github img{
+    width: 25rem;
+    height: 16rem;
+    align-self: center;
+}
+.github-list li{
+    font-size:2rem;
+}
+
+/* BUTTON */
+.button{
+  order: 8;
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+  padding-bottom:2rem;
+  display: flex;
+  justify-content: center;
+}
+.button button{
+    width: 5rem;
+}
+.button button a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}
+
+/* CORRECTIONS --- ALL DIVS CONFIS */
+.allgames{
+    padding-bottom: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+
+}
+.allgames p{
+    padding-bottom: 1rem;
+}
+.allgames a{
+    text-decoration: none;
+}

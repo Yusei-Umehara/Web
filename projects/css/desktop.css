@@ -1,0 +1,80 @@
+/*
+1080 * 720 
+*/
+header{
+    height: 10vh;
+}
+
+.logo-neko{
+    width: 11rem;
+    height: 10rem;
+    padding-top: 0rem;
+    padding-right: 0rem;
+}
+
+ul li{
+    padding-top: 0.3rem;
+    font-size: 3rem;
+    padding-right: 2rem;
+    padding-left: 1rem;
+}
+.title{
+    font-size: 6rem;
+}
+.main-top p{ /* FIRST PHARAGRAPH */
+    font-size: 3rem;
+}
+.games{
+    padding-top: 2rem;
+    font-size: 5rem;
+}
+.others{
+    font-size: 3rem;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+}
+
+.main-text{
+    font-size: 2.7rem;
+
+}
+
+footer{
+    font-size: 2rem;
+    height: 10vh;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;   
+}
+
+.game1 img{
+    width: 13rem;
+    height: 18rem;
+    align-self: center;
+}
+
+.allgames{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 3rem;
+
+}
+
+.game1, .game2, .game3, .game4, .link-tree, .github{
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.game1 img, .game2 img, .game3 img, .game4 img, .link-tree img, .github img{
+    padding-left: 0.1rem;
+}

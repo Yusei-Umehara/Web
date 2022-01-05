@@ -1,0 +1,278 @@
+/*Diploma mobile view*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    background-color:blueviolet;
+}
+header{
+    display: flex;
+    justify-content: end;
+
+    background-color: black;
+    width: 100%;
+    height: 6rem;
+    
+}
+.head-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.logo-container{
+    padding-right: 1rem;
+    width: auto;
+    height: auto;
+}
+
+.logo-neko{
+    width: 5rem;
+    height: 5rem;
+    padding-left: 1rem;
+    padding-top: 0.8rem;
+    position:relative;
+}
+
+.nav{
+    height: auto;
+    padding-top: 0.5rem;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+ul li{
+    list-style: none;
+    justify-content: space-between;
+    color: mediumpurple;
+    font-size: 1.6rem;
+    padding-top: 0.6rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+
+}
+
+.nav-items{
+    color: mediumpurple;
+    text-decoration: none;
+}
+.nav-items:hover{
+    background-color: mediumpurple;
+    color: red;
+}
+
+body{
+    font-size: 1.6rem;
+}
+main{
+    background-color: #1a1a1a;
+    width: 100%;
+    height: auto; /*Checar por si hay error */    
+}
+
+.main-top{
+    text-align: center;
+    order: 2;
+    width: 100%;
+    height: auto;
+}
+.main-top p{
+    color: whitesmoke;
+    font-size: 2rem;
+}
+.title{
+    color:mediumpurple;
+    font-size: 4rem;
+    padding-top: 1rem;
+
+}
+button{
+    background-color: mediumpurple;
+    color: black;
+
+}
+button:hover{
+    background-color: mediumslateblue;
+    color: red;
+}
+
+.main-text{
+    color: ghostwhite;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    height: auto;
+
+}
+
+.main-container{
+    /*display: flex;
+    flex-wrap: wrap; */
+    width: 100%;
+    height: 100%;
+}
+
+
+
+footer{
+    background-color: black;
+    color: mediumpurple;
+    width: 100%;
+    height: 5rem;
+    min-height: 3rem;;
+    max-height: auto;
+}
+
+
+/*DIPLOMAS IMAGES -------------------------------------------------*/
+
+.main-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.diploma-style{
+    justify-content: center;
+    width: auto;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding-bottom: 2rem;
+}
+.dc-pad{
+    padding-right: 0.5rem;
+}
+.diploma-img-size{
+    width: 26rem;
+    height: 20rem;
+}
+
+.diploma-english-color{
+    color:rgb(246, 53, 53)
+}
+.diploma-programming-color{
+    color:yellowgreen
+}
+.diploma-unity-color{
+    color:aqua
+}
+.diploma-soft-color{
+    color:orange;
+}
+
+
+
+/* MODAL .----------------------------------------------------------------------------------*/
+.modal{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+    top:0;
+    position: fixed;
+    transition: 0.4s;
+
+    background: rgba(0,0,0,0.85);
+    
+    width: 100%;
+    height: 100%
+}
+.modal h3{
+    
+    font-size: 3rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.red{
+    color: red;
+}
+.green{
+    color: yellowgreen;
+}
+.blue{
+    color: aqua;
+}
+.orange{
+    color: orange
+}
+
+.imagen-grande{
+    display: block;
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-grande img{
+    max-width: 100%;
+    width: 50rem;
+    height: 100%;
+    border: 0.7rem solid whitesmoke;
+    box-sizing: border-box;
+}
+.imagen-grande a{
+    color: #fff;
+    font: 4rem;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.imagen-grande a:nth-child(2){
+    margin: 0;
+    width: auto;
+    height: auto;
+
+    flex-shrink: 2;
+}
+.cerrar{
+    display: block;
+    background: #fff;
+    color: #000;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 1.5rem auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 40%;
+    line-height: 2rem;
+
+}
+
+
+
+/* UP BUTTON ------------------------------------------------------------------------------ */
+.button{
+  width: 100%;
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom:2rem
+}
+.button button{
+    width: 5rem;
+}
+.button button a{
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+}

@@ -1,0 +1,30 @@
+/*
+550 * 670
+*/
+.logo-neko{
+    width: 6.5rem;
+    height: 6rem;
+    padding-top: 0rem;
+    padding-right: 0rem;
+}
+
+ul li{
+    padding-top: 0.8rem;
+    font-size: 2.4rem;
+    padding-right: 1rem;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+}
+
+.main-text{
+    font-size: 2.1rem;
+
+}
+
+footer{
+
+    height: 6rem;
+}

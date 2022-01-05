@@ -1,0 +1,50 @@
+/*
+550 * 670
+*/
+.logo-neko{
+    width: 6.5rem;
+    height: 6rem;
+    padding-top: 0rem;
+    padding-right: 0rem;
+}
+
+ul li{
+    padding-top: 0.8rem;
+    font-size: 2.4rem;
+    padding-right: 1rem;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+}
+
+.main-text{
+    font-size: 2.1rem;
+}
+
+footer{
+    height: 6rem;
+}
+
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;   
+}
+
+.game1 img{
+    width: 13rem;
+    height: 18rem;
+    align-self: center;
+}
+
+.allgames{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.2rem;
+}
