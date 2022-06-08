@@ -1,0 +1,66 @@
+#modo{
+    padding: 0.8rem 0 0 0;
+    margin-right: 0rem;
+    width: 40px;
+    font-size: 30px;
+    margin: 0 0 0 1.8rem;
+    cursor: pointer;
+    border: none;
+}
+.dark header{
+    border-bottom: 1.5px solid rgb(200, 200, 200); /* Linea debajo de tituo */
+}
+.dark .modo_actualizar, .dark .modo_instrucciones{
+    color: whitesmoke;
+}
+
+.dark .instructions:target{
+    background-color: rgba( 0, 0, 0, 0.95);
+    color: whitesmoke;
+    
+}
+
+.dark #container{
+    background-color: rgb(28, 28, 38);
+    color: whitesmoke;
+
+}
+.dark h1, .dark h2{
+    color:whitesmoke;
+}
+.dark .square{
+    border: 2px solid  rgba(200, 200, 200, 0.80);
+    font-weight: bold;
+}
+.dark .keyboard-row button:hover{
+    background-color: rgba( 50, 50, 50, 0.3);
+    border: solid 1px whitesmoke;
+}
+/* KEYBOARD */
+.dark .keyboard-row button{
+    background-color: rgba( 129, 131, 132, 0.75);
+    color: rgba(215, 218, 220, 1);
+}
+
+/*
+.dark .description{
+    color: gainsboro;
+}
+.dark #modo{ /* Boton 
+    color: slateblue;
+}
+
+.dark .card__perfil{
+    background: rgba(50, 50, 50);
+}
+.dark .card__perfil:hover{
+    border: solid purple 2px;
+}
+
+.dark p{
+    color: whitesmoke;
+}
+.dark .enlace{
+    background: blueviolet;
+}
+*/

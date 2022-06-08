@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Clone</title>
+<!-- DESIGN PAGES -->
+    <link rel="icon" type="image/png" href="images/w.png">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/dark.css"/>
+<!-- Animate.CSS library -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body class="" id="body_">
+
+    <div id="container">
+        <div id="game"> 
+            <header>
+<!-- INSTRUCCIONES __ -->
+                <div class="instructions modal" id="modal_id">
+                    <div class="title_and_x">
+                        <h2>Instructions | How to play</h2>
+                        <span><a class="x_" href="#">X</a></span>
+                    </div>
+                    <br>
+                    <p>
+                        Guess the hidden word in 6 attemps.
+                        <br><br>Every refresh is a new word
+                        <br><br>After every word attempt, the color of the letters will
+                        <br> change to show you how close are you to the answer:
+                        <br><br> Examples:
+                        <br>
+                    </p>
+                    <div class="images_container">
+                        <img src="images/1green.png" alt="green background = right letter and position">
+                        <p>
+                            The letter C is in the word and is in the right position.
+                        </p>
+                        <img src="images/2yellow.png" alt="yellow background = right letter and wrong position">
+                        <p>
+                            The letter A is in the word but not in the right position.
+                        </p>
+                        <img src="images/3grey.png" alt="grey background = wrond letter and position">
+                        <p>
+                            The letter o isn't in the word.
+                        </p>
+                        <br><br>
+                        <p>
+                            There can be repeated letters, <br> the hints are independent for every letter and have priority
+                        </p>
+                        <br>
+                        <p>WORDLE CLONE</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="barra_titulo">
+<!-- BOTONES IZQUIERDA  Y TITULO PRINCIPAL  : -->
+                    <a class ="modo_instrucciones" id="modo2" href="#modal_id">ⅰ</a>
+                    <a class="modo_actualizar" id="modo2" href="index.html">↺</a>
+                    <!-- Clase y id que hagan lo mismo que modo pero con diferente nombre -->
+                    <h1 class="title tittle_responsive">WORDLE CLONE!</h1>
+<!-- ICONO DARK THEME -->
+                    <div class="modo boton_oscuro_responsivo" id="modo">
+                        <i class="fas fa-toggle-on "></i>                       
+                    </div>
+                    <!-- <hr> LINEA DE SEPARACION -->
+                </div>
+            </header>
+<!-- ZONA DE GENERACION DE GRILLA -->
+            <div id="board-container">
+                <div id="board"></div>
+            </div> <!-- id = board-container -->
+<!-- CONTENEDOR DE TECLADO INFERIOR -->
+            <div id="keyboard-container">
+<!-- FIRST ROW  1 -->
+                <div class="keyboard-row">
+                    <button data-key="q">q</button>
+                    <button data-key="w">w</button>
+                    <button data-key="e">e</button>
+                    <button data-key="r">r</button>
+                    <button data-key="t">t</button>
+                    <button data-key="y">y</button>
+                    <button data-key="u">u</button>
+                    <button data-key="i">i</button>
+                    <button data-key="o">o</button>
+                    <button data-key="p">p</button>
+                </div>
+<!-- SECOND ROW 2 -->
+                <div class="keyboard-row">
+                    <div class="spacer-half"></div>
+                    <button data-key="a">a</button>
+                    <button data-key="s">s</button>
+                    <button data-key="d">d</button>
+                    <button data-key="f">f</button>
+                    <button data-key="g">g</button>
+                    <button data-key="h">h</button>
+                    <button data-key="j">j</button>
+                    <button data-key="k">k</button>
+                    <button data-key="l">l</button>
+                    <!-- <button data-key="p">ñ</button> -->
+                    <div class="spacer-half"></div>
+                </div>
+<!-- THIRD ROW  3 -->
+                <div class="keyboard-row">
+                    <button data-key="enter" class="wide-button">Enter</button>
+                    <button data-key="z">z</button>
+                    <button data-key="x">x</button>
+                    <button data-key="c">c</button>
+                    <button data-key="v">v</button>
+                    <button data-key="b">b</button>
+                    <button data-key="n">n</button>
+                    <button data-key="m">m</button>
+                    <button data-key="del" class="wide-button">Del</button>
+                </div>
+<!--  -->
+            </div> <!-- KEYBOARD CONTAINER END -->
+
+        </div>
+    </div>
+</body>
+</html>

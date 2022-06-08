@@ -1,0 +1,35 @@
+#modo{
+    width: 20px;
+    font-size: 60px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.dark{
+    background-color: rgb(32, 32, 42);
+    color: whitesmoke;
+
+}
+.dark h1, .dark h2{
+    color:whitesmoke;
+}
+.dark .description{
+    color: gainsboro;
+}
+.dark #modo{ /* Boton */
+    color: slateblue;
+}
+
+.dark .card__perfil{
+    background: rgba(50, 50, 50);
+}
+.dark .card__perfil:hover{
+    border: solid purple 2px;
+}
+
+.dark p{
+    color: whitesmoke;
+}
+.dark .enlace{
+    background: blueviolet;
+}

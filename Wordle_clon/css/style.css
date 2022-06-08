@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba( 0, 0, 0, 0.85);
+
+}
+#container{
+    display: flex;
+    background-color: whitesmoke;
+    color: black;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+
+}
+#game{
+    width: 100%;    
+    max-width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+header{
+    border-bottom: 1px solid rgb(58, 58, 60); /* Linea debajo de tituo */
+}
+/* PANEL DE INSTRUCCIONES : */
+.instructions{
+    display: none;
+    /* visibility: hidden; */
+
+}
+.instructions:target {
+    display: block;
+    z-index: 100;
+    text-align: center;
+        /* Crear pagina de onstrucciones que este por encima de la original y se haga 
+    hidden y des.haga presionando un boton.  */
+    position: fixed;
+    background-color: rgba( 250, 250, 250, 0.95);
+    color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.instructions h2{
+    text-align: center;    
+    margin: 10px 0; 
+}
+.images_container img{
+    height: 60px;
+    width: 300px;
+}
+.x_{
+    font-size: 2rem;
+    text-decoration: none;
+    color: orangered;
+    border-radius: 25%;
+
+}
+.title_and_x{
+    display: flex;
+    justify-content: center;
+}
+.title_and_x span{
+    padding: 0.45rem 0 0 1rem ;
+    
+}
+/* FIN DEL PANEL DE INSTRUCCIONES : */
+
+#modo2{
+    margin-right: 0rem;
+    width: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+.modo_instrucciones{
+    padding: 0.48rem 0.1rem 0 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.modo_actualizar{
+    padding: 0.3rem 1rem 0 0.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.title{
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.4rem 0 0.4rem 0;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.barra_titulo{
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+
+/* TABLERO */
+#board-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    overflow: hidden;
+
+}
+#board{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.square{
+    border: 2px solid  rgb(58, 58, 60);
+    min-width: 50px;
+    min-height: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    
+    text-transform: uppercase;
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* KEYBOARD - */
+#keyboard-container{
+    height: 200px;
+}
+.keyboard-row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto 8px;
+    touch-action: manipulation;  /*   */
+}
+.keyboard-row button{
+    font-family: inherit;
+    font-weight: bold;
+    border: 0;
+    padding: 0;
+    height: 55px;
+    cursor: pointer;
+    background-color: rgba( 230, 231, 232, 1);
+    flex-grow: 1;
+    text-transform: uppercase;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 4px;
+    user-select: none;
+    
+    border: solid 1px black;
+}
+.keyboard-row button:hover{
+    background-color: rgba( 100, 100, 100, 0.5);
+    border: solid 1px gray;
+}
+.keyboard-row button.wide-button{
+    flex-grow: 1.25;
+}
+.spacer-half{
+    flex-grow: 0.5;
+}
+
+
+/* RESPONSIVE _ MEDIUM SIZE */
+@media (max-width: 800px){
+    .barra_titulo{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tittle_responsive{
+        display: flex;
+        font-size: 1rem;
+        margin: 0 0.3rem;
+        align-items: center;
+    }
+    .square{
+       min-height: 40px;
+       min-width: 40px;
+
+    }
+
+    .instructions {
+        font-size: 0.65rem;
+
+    }
+
+    .images_container img{
+        width: 250px;
+        height: 50px;
+        margin: 0.5rem;
+    }
+
+
+}
+
+/* RESPONSIVE _ MINIMUM_SMALL  SIZE */
+@media (max-width: 500px){
+   .barra_titulo{
+       display: flex;
+       justify-content: center;
+   }
+    .tittle_responsive{
+        display: flex;
+        font-size: 0.85rem;
+        margin: 0 0.3rem;
+        align-items: center;
+    }
+    
+    #modo{
+        margin: 0 0 0 0.8rem !important;
+        padding: 0.5rem 0 0 0 !important;
+    }
+    #modo2{
+        padding-right: 0.5rem !important;
+        padding-left: 0 !important;
+    }
+
+    .square{
+       min-height: 25px;
+       min-width: 25px;
+
+    }
+
+    .instructions {
+        font-size: 0.55rem;
+
+    }
+
+    .images_container img{
+        width: 200px;
+        height: 40px;
+        margin: 0.3rem;
+    }
+
+
+}
+/**/
